@@ -7,17 +7,14 @@ class GraphQlClass {
   static ValueNotifier<GraphQLClient> client = ValueNotifier<GraphQLClient>(
     GraphQLClient(
       link: httpLink,
-      cache: GraphQLCache(
-        store: HiveStore(),
-      ),
+      cache: GraphQLCache(),
     ),
   );
+
   GraphQLClient clienttoQuery() {
     return GraphQLClient(
       link: httpLink,
-      cache: GraphQLCache(
-        store: HiveStore(),
-      ),
+      cache: GraphQLCache(),
     );
   }
   // k
