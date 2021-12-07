@@ -1,10 +1,11 @@
 /// countries : [{"name":"United States","isoCode":"us"},{"name":"Germany","isoCode":"de"},{"name":"United Kingdom","isoCode":"gb"},{"name":"Canada","isoCode":"ca"},{"name":"India","isoCode":"in"},{"name":"Norway","isoCode":"no"},{"name":"France","isoCode":"fr"},{"name":"Denmark","isoCode":"dk"},{"name":"Poland","isoCode":"pl"},{"name":"Mexico","isoCode":"mx"},{"name":"Taiwan","isoCode":"tw"},{"name":"Portugal","isoCode":"pt"}]
 
-class QQQ {
-  QQQ({
-      this.countries,});
+class CountryModel {
+  CountryModel({
+    this.countries,
+  });
 
-  QQQ.fromJson(dynamic json) {
+  CountryModel.fromJson(dynamic json) {
     if (json['countries'] != null) {
       countries = [];
       json['countries'].forEach((v) {
@@ -21,7 +22,6 @@ class QQQ {
     }
     return map;
   }
-
 }
 
 /// name : "United States"
@@ -29,8 +29,9 @@ class QQQ {
 
 class Countries {
   Countries({
-      this.name, 
-      this.isoCode,});
+    this.name,
+    this.isoCode,
+  });
 
   Countries.fromJson(dynamic json) {
     name = json['name'];
@@ -45,5 +46,4 @@ class Countries {
     map['isoCode'] = isoCode;
     return map;
   }
-
 }

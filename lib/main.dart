@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return GraphQLProvider(
       client: GraphQlClass.client,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: HomeScreen(),
       ),
     );
