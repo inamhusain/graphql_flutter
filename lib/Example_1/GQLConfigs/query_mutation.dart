@@ -1,4 +1,4 @@
-class QueryMutation {
+class QueryMutationEx1 {
   //* Get all countries...
   String getCountries = '''
   query GetCountries{
